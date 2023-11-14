@@ -2,7 +2,7 @@ import os
 import json
 from termcolor import colored
 
-json_dosyasi = open("/home/a/Desktop/kodlar/yeni/dosya.json","w",encoding='utf-8')
+json_dosyasi = open("/home/a/Desktop/dosya.json","w",encoding='utf-8')
 gönder = {}
 
 mesaj = '''
@@ -93,7 +93,7 @@ elif secim == 2:
 json_dosyasi.close() #json dosyasına içeriklerimizi gönderdikten sonra dosyayı kapatıyoruz
 #=========================
 print("\nbu keyler ile dosya içeriğini çekebilirsiniz :\n")
-with open("/home/a/Desktop/kodlar/yeni/dosya.json","r") as dosya:
+with open("/home/a/Desktop/dosya.json","r") as dosya:
     veriler = json.load(dosya)
 anahtarlar = list(veriler.keys())
 [print(i) for i in anahtarlar]
